@@ -14,6 +14,9 @@ Pod::Spec.new do |s|
   s.frameworks   = 'UIKit', 'Foundation'    #所需的framework,多个用逗号隔开
   s.subspec 'Base' do |base|
       base.source_files = 'WXKit/Classes/Base/**/*'
+      base.public_header_files = 'WXKit/Classes/Base/WXBase.h'
+      base.dependency 'AFNetworking', '~> 3.0.4'
+      base.dependency 'YYKit'
   end
   s.subspec 'Model' do |model|
       model.source_files = 'WXKit/Classes/Model/**/*'
