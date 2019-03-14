@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"              #支持的平台及版本
   s.requires_arc = true                     #是否使用ARC
   s.frameworks   = 'UIKit', 'Foundation'    #所需的framework,多个用逗号隔开
-  s.source_files = "WXKit/Classes/**/*"    #OC可以使用类似这样"Classes/**/*.{h,m}"
   s.subspec 'Base' do |base|
       base.source_files = 'WXKit/Classes/Base/**/*'
   end
